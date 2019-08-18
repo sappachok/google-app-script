@@ -5,9 +5,9 @@ function sendEmail() {
   var row = values.getLastRow(); // This accesses only the last row with data in it 
   
   // EXTRACT VALUES //
-  var id = values.getRange(row, 1).getValue(); //Note that column numbering start at 1 instead of at 0
+  var id = values.getRange(row, 2).getValue(); //Note that column numbering start at 1 instead of at 0
   var fullname = values.getRange(row, 3).getValue(); //Note that column numbering start at 1 instead of at 0
-  var email = values.getRange(row, 4).getValue();
+  var email = values.getRange(row, 5).getValue();
   
   // PREPARE EMAIL //
   
